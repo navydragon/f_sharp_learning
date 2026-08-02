@@ -8,11 +8,11 @@ let assertEqual name expected actual =
         printfn "FAIL %s: expected %A, got %A" name expected actual
 
 printfn "--- notDivisible ---"
-assertEqual "2 не делит 5"  true  (notDivisible (2, 5))
-assertEqual "2 делит 4"     false (notDivisible (2, 4))
-assertEqual "3 не делит 10" true  (notDivisible (3, 10))
-assertEqual "5 делит 25"    false (notDivisible (5, 25))
-assertEqual "1 делит 7"     false (notDivisible (1, 7))
+assertEqual "2 делит 4"     true  (notDivisible (2, 4))
+assertEqual "2 не делит 5"  false (notDivisible (2, 5))
+assertEqual "3 не делит 10" false (notDivisible (3, 10))
+assertEqual "5 делит 25"    true  (notDivisible (5, 25))
+assertEqual "1 делит 7"     true  (notDivisible (1, 7))
 
 printfn "--- prime ---"
 assertEqual "1 не простое"  false (prime 1)
