@@ -1,9 +1,9 @@
 module Task9
 
 // 23.4.1
-let private toCopper (g, s, c) = g * 240 + s * 12 + c
+let toCopper (g, s, c) = g * 240 + s * 12 + c
 
-let private fromCopper total =
+let fromCopper total =
     if total <= 0 then (0, 0, 0)
     else
         let g = total / 240
