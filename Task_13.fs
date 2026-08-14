@@ -32,4 +32,4 @@ let rec zip (xs1, xs2) =
     match xs1, xs2 with
     | [], [] -> []
     | x :: xs, y :: ys -> (x, y) :: zip (xs, ys)
-    | _ -> failwith "list lengths differ"
+    | _ -> failwith "Длины списков не совпадают"
