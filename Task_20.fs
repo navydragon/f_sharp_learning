@@ -1,4 +1,4 @@
-module Task49
+module Task20
 
 // 49.5.1
 let even_seq = Seq.initInfinite (fun i -> 2 * (i + 1))

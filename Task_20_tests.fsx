@@ -1,5 +1,5 @@
 #load "Task_20.fs"
-open Task49
+open Task20
 
 let assertEqual name expected actual =
     if expected = actual then
